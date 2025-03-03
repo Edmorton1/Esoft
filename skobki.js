@@ -1,3 +1,4 @@
+console.log('brackets')
 function checkBracket(value) {
   if (
     value.split("(").length - 1 != value.split(")").length - 1 ||

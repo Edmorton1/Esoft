@@ -1,3 +1,4 @@
+console.log('deepCopy')
 function deepCopy(obj) {
     const prototype = Object.getPrototypeOf(obj)
     const result = Object.create(prototype)
@@ -52,7 +53,7 @@ console.log(deepCopy(test_obj).num == test_obj.num) // true
 console.log(deepCopy(test_obj).getNum == test_obj.getNum) // true
 console.log(deepCopy(test_obj).str == test_obj.str) // true
 console.log(deepCopy(test_obj).set == test_obj.set) // false
-console.log(deepCopy(test_obj).map == test_obj.map) // false asdasdasas
+console.log(deepCopy(test_obj).map == test_obj.map) // false
 console.log(deepCopy(test_obj).arr == test_obj.arr) // false
 console.log(deepCopy(test_obj).date == test_obj.date) // false
 console.log(deepCopy(test_obj).func == test_obj.func) // false
