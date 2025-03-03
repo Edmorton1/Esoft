@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --margo: 30px;
+    margin-top: var(--margo);
+}
+
+#chimney {
+    background-color: gray;
+
+    position: absolute;
+    height: 200px;
+    top: 0;
+
+    width: 100px;
+
+    margin-top: var(--margo);
+    margin-left: 400px;
+
+    z-index: -1;
+}
+#roof {
+    width: 0;
+    height: 0;
+
+    border-left: 600px solid transparent;
+    border-right: 600px solid transparent;
+    border-bottom: 300px solid rgb(172, 1, 1);
+}
+#foundation {
+    width: 1000px;
+    height: 500px;
+
+    background-color: rgb(107, 52, 0);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+#window {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+    background-color: aqua;
+    margin-bottom: 10%;
+}
+#door {
+    width: 200px;
+    height: 400px;
+    background-color: rgb(163, 106, 0);
+}
